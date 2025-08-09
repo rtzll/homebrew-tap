@@ -5,23 +5,23 @@
 class Tldw < Formula
   desc "Too Long; Didn't Watch - YouTube video summarizer (CLI + MCP)"
   homepage "https://github.com/rtzll/tldw"
-  version "0.9.2"
+  version "0.10.0"
 
   depends_on "ffmpeg"
   depends_on "yt-dlp"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rtzll/tldw/releases/download/v0.9.2/tldw_0.9.2_darwin_amd64.tar.gz"
-      sha256 "c84b505df98171c9a498032d041a53543647ab1127eb9112417319a74615656b"
+      url "https://github.com/rtzll/tldw/releases/download/v0.10.0/tldw_0.10.0_darwin_amd64.tar.gz"
+      sha256 "3270e6c3e1f11fefe0781ac6b18505bc1493c2422e1a662c35691aa2978fd215"
 
       def install
         bin.install "tldw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rtzll/tldw/releases/download/v0.9.2/tldw_0.9.2_darwin_arm64.tar.gz"
-      sha256 "a41a3184504293a3320ed070f02fadac9a04c232012e1b4f6db02318f9f169f6"
+      url "https://github.com/rtzll/tldw/releases/download/v0.10.0/tldw_0.10.0_darwin_arm64.tar.gz"
+      sha256 "df4ac46411f185ef6ffd2d5287d37f38b3101bfb38dc6c27283aced9ce1da814"
 
       def install
         bin.install "tldw"
@@ -31,15 +31,15 @@ class Tldw < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/rtzll/tldw/releases/download/v0.9.2/tldw_0.9.2_linux_amd64.tar.gz"
-      sha256 "bb626993405f29dc8b5502f8b5fd930d6e45749eb89fc9659250a6274345685d"
+      url "https://github.com/rtzll/tldw/releases/download/v0.10.0/tldw_0.10.0_linux_amd64.tar.gz"
+      sha256 "a777c1a106571bf1bf8643015428fa0e81282917dcbc6a62a7d3f2c4bc991e49"
       def install
         bin.install "tldw"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/rtzll/tldw/releases/download/v0.9.2/tldw_0.9.2_linux_arm64.tar.gz"
-      sha256 "f7ab7c2fc17cc5f64840706b22fdfac517df65c87882de3fe97b285744da239d"
+      url "https://github.com/rtzll/tldw/releases/download/v0.10.0/tldw_0.10.0_linux_arm64.tar.gz"
+      sha256 "e053de7c4b9b4d88169f28bd09a76303737b3725eaddbef73c04c4da6857ba2e"
       def install
         bin.install "tldw"
       end

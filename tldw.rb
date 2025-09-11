@@ -5,23 +5,23 @@
 class Tldw < Formula
   desc "Too Long; Didn't Watch - YouTube video summarizer (CLI + MCP)"
   homepage "https://github.com/rtzll/tldw"
-  version "0.11.2"
+  version "0.11.3"
 
   depends_on "ffmpeg"
   depends_on "yt-dlp"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rtzll/tldw/releases/download/v0.11.2/tldw_0.11.2_darwin_amd64.tar.gz"
-      sha256 "cdaf6e6b638d2bc517c0f6e28bc0572f7e27421a09e1496f484ba85c263f5e42"
+      url "https://github.com/rtzll/tldw/releases/download/v0.11.3/tldw_0.11.3_darwin_amd64.tar.gz"
+      sha256 "3ef1b2720874578e7fba14e72f63b8da7a77318cb6a98661ed552c3dc214539f"
 
       def install
         bin.install "tldw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rtzll/tldw/releases/download/v0.11.2/tldw_0.11.2_darwin_arm64.tar.gz"
-      sha256 "da1e7f02709d454c9cdcf5e3aab2432354a938013f93f99d38298ee41aa2bff1"
+      url "https://github.com/rtzll/tldw/releases/download/v0.11.3/tldw_0.11.3_darwin_arm64.tar.gz"
+      sha256 "e87d1e24e20428c20a1a97e495c40cea25693115395f1d65b8e141049a98b3c2"
 
       def install
         bin.install "tldw"
@@ -30,16 +30,16 @@ class Tldw < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/rtzll/tldw/releases/download/v0.11.2/tldw_0.11.2_linux_amd64.tar.gz"
-      sha256 "ed566ebac8da41106558bacad58c964731f5fcb4bcde31187899d98fe718cfba"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/rtzll/tldw/releases/download/v0.11.3/tldw_0.11.3_linux_amd64.tar.gz"
+      sha256 "c97fcb225e3279b481488dcc58838e6186b44adc2c9226f8344ef439b863db95"
       def install
         bin.install "tldw"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/rtzll/tldw/releases/download/v0.11.2/tldw_0.11.2_linux_arm64.tar.gz"
-      sha256 "d5c3f65ebb5196df84c2279fefa59294c4915cba3505d4f8fda26e14dd129b0e"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/rtzll/tldw/releases/download/v0.11.3/tldw_0.11.3_linux_arm64.tar.gz"
+      sha256 "738130955afd24bd8ae9053c0274ede77f436b995d558a3e64a3938f11b80a0b"
       def install
         bin.install "tldw"
       end

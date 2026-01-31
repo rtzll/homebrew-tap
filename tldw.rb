@@ -5,23 +5,23 @@
 class Tldw < Formula
   desc "Too Long; Didn't Watch - YouTube video summarizer (CLI + MCP)"
   homepage "https://github.com/rtzll/tldw"
-  version "0.13.2"
+  version "0.13.3"
 
   depends_on "ffmpeg"
   depends_on "yt-dlp"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rtzll/tldw/releases/download/v0.13.2/tldw_0.13.2_darwin_amd64.tar.gz"
-      sha256 "fafeea6d7a5fa82638f9bff8cb5de81205d21f615c4e919381fc9aac804aa30d"
+      url "https://github.com/rtzll/tldw/releases/download/v0.13.3/tldw_0.13.3_darwin_amd64.tar.gz"
+      sha256 "39e23af6e14d03047fce04757b994d3d4c1d2e02599b402791c5eceaa9cdc9f6"
 
       def install
         bin.install "tldw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rtzll/tldw/releases/download/v0.13.2/tldw_0.13.2_darwin_arm64.tar.gz"
-      sha256 "a59ed8824cecef428d84205694a701de8c0bee3707665766c7ea7042d44921e1"
+      url "https://github.com/rtzll/tldw/releases/download/v0.13.3/tldw_0.13.3_darwin_arm64.tar.gz"
+      sha256 "f8ac7deaddc16336022f81fbc89811994467a4eeca65fc299bdfd7272d77fb93"
 
       def install
         bin.install "tldw"
@@ -31,15 +31,15 @@ class Tldw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rtzll/tldw/releases/download/v0.13.2/tldw_0.13.2_linux_amd64.tar.gz"
-      sha256 "8ab03eccc69e94e25dba1337bcc713966356ed523dd1fdf6e96d9d613ab7c712"
+      url "https://github.com/rtzll/tldw/releases/download/v0.13.3/tldw_0.13.3_linux_amd64.tar.gz"
+      sha256 "787ba634ed7a38e0e89aca835d6bcf00fd40f545fdf0413bbb7dea22b17684fe"
       def install
         bin.install "tldw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rtzll/tldw/releases/download/v0.13.2/tldw_0.13.2_linux_arm64.tar.gz"
-      sha256 "8ebc1d7186bb84d6bb82ff75c7d02c0101faeac14c03c647e7138b0a897cf425"
+      url "https://github.com/rtzll/tldw/releases/download/v0.13.3/tldw_0.13.3_linux_arm64.tar.gz"
+      sha256 "c44fb31929b527f05b8f3dd0f365d0953ace6ca8741ba834ab7cf1bc990e682e"
       def install
         bin.install "tldw"
       end

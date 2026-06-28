@@ -5,23 +5,23 @@
 class Tldw < Formula
   desc "Too Long; Didn't Watch - YouTube video summarizer (CLI + MCP)"
   homepage "https://github.com/rtzll/tldw"
-  version "0.16.0"
+  version "0.16.1"
 
   depends_on "ffmpeg"
   depends_on "yt-dlp"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rtzll/tldw/releases/download/v0.16.0/tldw_0.16.0_darwin_amd64.tar.gz"
-      sha256 "e1da8b66b3cee49e8da7b27c128979fa41bb9f9b023b1e62b4ac3710b6a8e4ef"
+      url "https://github.com/rtzll/tldw/releases/download/v0.16.1/tldw_0.16.1_darwin_amd64.tar.gz"
+      sha256 "5e60b04ebe14ed213eb705eb0670819859a80ae19806f203ad4411cffce9fc06"
 
       define_method(:install) do
         bin.install "tldw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rtzll/tldw/releases/download/v0.16.0/tldw_0.16.0_darwin_arm64.tar.gz"
-      sha256 "770d5b6ca72b6d774f6ebc2e6f903367404a4f9423416afa53617216142cdefe"
+      url "https://github.com/rtzll/tldw/releases/download/v0.16.1/tldw_0.16.1_darwin_arm64.tar.gz"
+      sha256 "b9a7afc813c5bcb469cc88d13c7a46f378bd1872a33631de7315d26cf83a80f0"
 
       define_method(:install) do
         bin.install "tldw"
@@ -31,15 +31,15 @@ class Tldw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rtzll/tldw/releases/download/v0.16.0/tldw_0.16.0_linux_amd64.tar.gz"
-      sha256 "c72fc8033e9f44718a1f5ff29592a1c6a48f485931fa0631e5e28d731d482d53"
+      url "https://github.com/rtzll/tldw/releases/download/v0.16.1/tldw_0.16.1_linux_amd64.tar.gz"
+      sha256 "ab8b21e743198dbaa95e4bb14c0f3760ffb4cc9160728900041028d842fa6acf"
       define_method(:install) do
         bin.install "tldw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rtzll/tldw/releases/download/v0.16.0/tldw_0.16.0_linux_arm64.tar.gz"
-      sha256 "52e906b27ee8409cf0a53fa90aaed3ee864d1480a638c49923b1ae8cd4f2bd5e"
+      url "https://github.com/rtzll/tldw/releases/download/v0.16.1/tldw_0.16.1_linux_arm64.tar.gz"
+      sha256 "1ba69372c2256111296bb136edd694a86969338894091c3742a7439d81da65e4"
       define_method(:install) do
         bin.install "tldw"
       end
